@@ -81,7 +81,7 @@ public:
     ~DynamicBuffer() {
         // TODO: Implement destructor
         //   1. Increment g_destructorCount
-         g_constructorCount++;
+         g_destructorCount++;
         //   2. Delete the dynamically allocated array (delete[])
         delete[] m_data;
     }
